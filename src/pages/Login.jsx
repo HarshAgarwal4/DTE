@@ -16,11 +16,10 @@ const LoginForm = () => {
     } = useForm();
 
     useEffect(() => {
-        console.log(user)
         if(user){
             navigate('/')
         }
-    },[])
+    },[user])
 
     const onSubmit = async (data) => {
         try {
